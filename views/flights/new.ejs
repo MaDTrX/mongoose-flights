@@ -1,0 +1,20 @@
+<%- include('../partials/header') %>
+<h2>ADD A FLIGHT</h2>
+  <form action="/" method="POST">
+    <label>AIRLINE:
+      <input type="text" name="title">
+    </label><br>
+    <label>AIRPORT
+      <select name="airport">
+        <option value="AUS">AUS</option>
+        <option value="DFW">DFW</option>
+        <option value="DEN">DEN</option>
+        <option value="LAX">LAX</option>
+      </select>
+    </label><br>
+    <label>DEPARTS:
+      <input type="datetime-local" name="date">
+    </label><br>
+    <input type="submit" value="Add Flight">
+  </form>
+<%- include('../partials/footer') %>
