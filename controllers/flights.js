@@ -12,13 +12,14 @@ function index (req, res) {
              res.render('flights/index', { flights })
          })
     }
+function newflight(req, res) {
+        
 
-    function newflight(req, res) {
-        res.render('flights/new');
+res.render('flights/new');
       }
       
       function create(req, res) {
-
+        console.log(req.body)
         for (let key in req.body) {
           if (req.body[key] === '') delete req.body[key];
         }
