@@ -13,10 +13,13 @@
       </select>
     </label><br>
     <label>FLIGHT #:
-      <input type="number" name="flightNo">
+        <input type="number" name="flightNo">
     </label><br>
     <label>DEPARTS:
-      <input type="datetime-local" name="departs">
+        <input type="datetime-local" name="departs" value="<%= new Date(new Date().setFullYear(new Date().getFullYear() + 1).toLocaleString()) %>">
+    </label><br>
+    <label>DESTINATIONS:
+      <input type="text" name="destinations">
     </label><br>
     <input type="submit" value="Add Flight">
   </form>
