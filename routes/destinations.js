@@ -5,8 +5,8 @@ const flightsCtrl = require('../controllers/flights.js')
 
 
 
-router.get('/show/:id', flightsCtrl.findById)
-router.post('/show/:id/destinations', flightsCtrl.findById)
+router.get('/show/:id', flightsCtrl.show)
+router.post('/show/:id/destinations', flightsCtrl.show)
 
 
 module.exports = router;
